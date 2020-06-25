@@ -6,24 +6,24 @@
 /*   By: tmbexe <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/25 12:42:20 by tmbexe            #+#    #+#             */
-/*   Updated: 2020/06/25 13:03:01 by tmbexe           ###   ########.fr       */
+/*   Updated: 2020/06/25 13:07:06 by tmbexe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int multiplyNumbers(int n) {
-    if (n >= 1){
-        return n*multiplyNumbers(n-1);
+int ft_iterative_factorial(int nb) {
+    if (nb >= 1){
+        return nb*ft_iterative_factorial(nb-1);
     }else{
-        return 1;
+        return 0;
     }
 }
 
 /*int main(){
-	int n;	
+	int nb;	
 	ft_putchar('Enter a number: ');
-	scanf("%d", n);
-	ft_putchar('Factorial of %d = %d', n, multiplyNumbers(n));
+	scanf("%d", nb);
+	ft_putchar('Factorial of %d = %d', nb, ft_iterative_factorial(nb));
 	return 0;
 }*/
